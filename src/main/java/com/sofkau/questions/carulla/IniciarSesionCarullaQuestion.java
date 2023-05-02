@@ -4,7 +4,6 @@ import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.targets.TheTarget;
 import net.serenitybdd.screenplay.targets.Target;
 
-import static com.sofkau.ui.carulla.AsercionInicioSesionCarullaUI.NOMBRE_USUARIO;
 
 public class IniciarSesionCarullaQuestion {
 
