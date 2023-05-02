@@ -6,17 +6,16 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.Actor;
-import net.serenitybdd.screenplay.GivenWhenThen;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import static com.sofkau.tasks.AbrirPaginaInicial.abrirPaginaInicial;
 import static com.sofkau.tasks.carulla.AsercionNombreUsuarioCarullaTask.asercionNombreUsuarioCarullaTask;
 import static com.sofkau.tasks.carulla.IniciarSesionCarullaTask.iniciarSesionCarullaTask;
-import static com.sofkau.ui.carulla.AsercionInicioSesionCarullaUI.NOMBRE_USUARIO;
+import static com.sofkau.ui.carulla.AsercionInicioSesionCarullaUI.NOMBRE_USUARIO_CARULLA;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.Matchers.containsString;
+
 
 
 public class IniciarSesionCarullaStepDefinition extends SetUp {
@@ -44,7 +43,7 @@ public class IniciarSesionCarullaStepDefinition extends SetUp {
     public void alDarClickEnElBotonCuentaDeberiaAparecerElNombreDeMiUsuario() {
         try {
             theActorInTheSpotlight().should(
-                    seeThat(IniciarSesionCarullaQuestion.isEqualTo(NOMBRE_USUARIO), equalTo("Pablo Jaramillo"))
+                    seeThat(IniciarSesionCarullaQuestion.isEqualTo(NOMBRE_USUARIO_CARULLA), equalTo("1035436114"))
             );
             quitarDriver();
         } catch (Exception e){
